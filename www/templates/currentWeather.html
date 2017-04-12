@@ -1,0 +1,12 @@
+<ion-view title="{{city.id}}, {{city.st}}" id="page3">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="currentWeather-list5">
+      <ion-item id="currentWeather-list-item28">Current Conditions: {{ city.weather.summary }}</ion-item>
+      <ion-item id="currentWeather-list-item29">Current Temperature: {{ city.weather.temp }}</ion-item>
+      <ion-item id="currentWeather-list-item30">Humidity: {{ city.weather.humidity}}%</ion-item>
+      <ion-item id="currentWeather-list-item31">Today's High: {{ city.weather.tempMax }}</ion-item>
+      <ion-item id="currentWeather-list-item32">Today's Low: {{ city.weather.tempMin }}</ion-item>
+      <ion-item id="currentWeather-list-item34">Wind: {{ city.weather.windSpeed }} {{ city.weather.windBearing | direction }}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

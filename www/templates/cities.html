@@ -1,0 +1,17 @@
+<ion-view title="Cities" id="page8">
+  <ion-content padding="true" class="has-header">
+    <form id="cities-form1" class="list">
+      <label class="item item-input" id="cities-search2">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Search cities or states" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+    <ion-list id="cities-list7">
+      <ion-item class="item-thumbnail-left" id="cities-list-item13" ui-sref="currentWeather({&quot;cityid&quot;:&quot;&quot;+city.id+&quot;&quot;})" ng-repeat="city in narrowed_cities | orderBy:'id'">
+        <img src="{{city.picUrl}}">
+        <h2>{{city.id}}, {{city.st}}</h2>
+        <p>Click for weather info</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

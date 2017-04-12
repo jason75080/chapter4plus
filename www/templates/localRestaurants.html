@@ -1,0 +1,11 @@
+<ion-view title="Local Restaurants" id="page4">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="localRestaurants-card21" ng-repeat="restaurant in restaurants">
+      <h2>{{restaurant.name}}</h2>
+      <p>{{restaurant.address}}</p>
+      <div class=" item item-image">
+        <img src="{{restaurant.image_url}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
